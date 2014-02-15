@@ -46,3 +46,6 @@ cd build
 cmake .. -DBUILD_SHARED_LIBS=ON -DCMAKE_BUILD_TYPE=RELEASE -DWITH_GTK=ON -DWITH_FFMPEG=ON 
 make
 make install
+
+mkdir p ~/movies/size32
+rsync -av -e ssh root@210.140.145.199:~/movies/size32/ ~/movies/size32
