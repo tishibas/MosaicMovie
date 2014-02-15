@@ -11,6 +11,7 @@ wget http://sourceforge.net/projects/opencvlibrary/files/opencv-unix/2.4.8/openc
 
 
 unzip download
+unzip opencv-2.4.8.zip
 tar zxvf cmake-2.8.12.2.tar.gz
 tar zxvf yasm-1.2.0.tar.gz
 tar jxvf ffmpeg-2.1.3.tar.bz2
