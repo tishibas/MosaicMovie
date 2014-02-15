@@ -16,11 +16,6 @@ tar zxvf cmake-2.8.12.2.tar.gz
 tar zxvf yasm-1.2.0.tar.gz
 tar jxvf ffmpeg-2.1.3.tar.bz2
 
-cd x264
-./configure --enable-shared --enable-pic
-make
-make install
-
 cd ../cmake-2.8.12.2
 ./bootstrap
 make
@@ -33,6 +28,11 @@ make install
 
 cd ../ffmpeg-2.1.3
 ./configure --enable-gpl --enable-libx264 --enable-nonfree --enable-shared
+make
+make install
+
+cd ./x264
+./configure --enable-shared --enable-pic
 make
 make install
 

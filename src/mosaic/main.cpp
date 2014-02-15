@@ -1,4 +1,4 @@
-#include "EachDiffMosaicFactory.hpp"
+#include "YUVMosaicFactory.hpp"
 
 #include <opencv2/opencv.hpp>
 #include <string>
@@ -15,7 +15,7 @@ int main(int argc, char** argv){
     Mat input = cv::imread(argv[1]);
     string imgsList = argv[2];
 
-    MosaicFactory* mosFac = new EachDiffMosaicFactory();
+    MosaicFactory* mosFac = new YUVMosaicFactory();
     mosFac->addImgs(imgsList);
     Mat output = mosFac->generateMosaic(input, 20, 20);
     cv::imwrite("output.jpg", output);
