@@ -1,7 +1,7 @@
 IMG_SIZE = 640
 FPS = 20
 MOVE_SEC = 1
-START_NUM = 40
+START_NUM = 60
 
 def combine_images(img_count, size, sec)
   p "combine_images start!"
@@ -27,4 +27,4 @@ def combine_images(img_count, size, sec)
   end
 end
 
-combine_images(2, 640, 3)
+combine_images(2, 640, 5)
