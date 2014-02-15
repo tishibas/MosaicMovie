@@ -15,7 +15,11 @@ std::string EachDiffMosaicFactory::getSimilarImg(cv::Mat& patch){
         cv::Scalar s = cv::mean(diff);
 
         double sum = s[0] + s[1] + s[2];
-        if(sum < score) matchImg = *it;
+        if(sum < score){
+            score = sum;
+            matchImg = *it;
+        }
+        ++it;
     }
 
     return matchImg;

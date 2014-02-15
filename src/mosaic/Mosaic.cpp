@@ -11,6 +11,7 @@ void Mosaic::outputMosaicInfo(){
     std::vector<MosaicInfoElem>::iterator it = infos.begin();
     while(it != infos.end()){
         it->output();
+        ++it;
     }
 }
 

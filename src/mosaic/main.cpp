@@ -14,11 +14,10 @@ int main(int argc, char** argv){
     }
     Mat input = cv::imread(argv[1]);
     string imgsList = argv[2];
-    std::cout << imgsList << std::endl;
 
     MosaicFactory* mosFac = new EachDiffMosaicFactory();
     mosFac->addImgs(imgsList);
-    Mat output = mosFac->generateMosaic(input, 10, 10);
+    Mat output = mosFac->generateMosaic(input, 20, 20);
     cv::imwrite("output.jpg", output);
     
 

@@ -1,6 +1,7 @@
 PROGRAM = gen_mosaic
 GXX = g++
-CFLAGS = -Wall -g
+#CFLAGS = -Wall -g
+CFLAGS = -Wall -O3
 OBJS = MosaicFactory.o Mosaic.o MosaicInfoElem.o EachDiffMosaicFactory.o
 OPENCV = `pkg-config --cflags --libs opencv`
 
