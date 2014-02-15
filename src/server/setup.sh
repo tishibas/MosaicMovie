@@ -25,7 +25,7 @@ cd ../cmake-2.8.12.2
 make
 make install
 
-cd ../yasm-1.2.0.tar.gz
+cd ../yasm-1.2.0
 ./configure
 make
 make install
