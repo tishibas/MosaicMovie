@@ -16,22 +16,22 @@ tar zxvf cmake-2.8.12.2.tar.gz
 tar zxvf yasm-1.2.0.tar.gz
 tar jxvf ffmpeg-2.1.3.tar.bz2
 
-cd ../cmake-2.8.12.2
+cd ~/dev/cmake-2.8.12.2
 ./bootstrap
 make
 make install
 
-cd ../yasm-1.2.0
+cd ~/dev/yasm-1.2.0
 ./configure
 make
 make install
 
-cd ../ffmpeg-2.1.3
+cd ~/dev/ffmpeg-2.1.3
 ./configure --enable-gpl --enable-libx264 --enable-nonfree --enable-shared
 make
 make install
 
-cd ./x264
+cd ~/dev/x264
 ./configure --enable-shared --enable-pic
 make
 make install
@@ -40,7 +40,7 @@ echo 'export LD_LIBRARY_PATH=/usr/local/lib' >> ~/.bashrc
 echo 'export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig' >> ~/.bashrc
 source ~/.bashrc
 
-cd ../opencv-2.4.8
+cd ~/dev/opencv-2.4.8
 mkdir build
 cd build
 cmake .. -DBUILD_SHARED_LIBS=ON -DCMAKE_BUILD_TYPE=RELEASE -DWITH_GTK=ON -DWITH_FFMPEG=ON 
