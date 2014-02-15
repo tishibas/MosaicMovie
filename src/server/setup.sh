@@ -37,7 +37,6 @@ make install
 
 echo 'export LD_LIBRARY_PATH=/usr/local/lib' >> ~/.bashrc
 echo 'export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig' >> ~/.bashrc
-
 source ~/.bashrc
 
 cd ../opencv-2.4.8
